@@ -1,6 +1,6 @@
 <template>
     <picture>
-        <source :media="`(max-width: ${breakPointMobile})`" :srcset="`${getSpImg}`" />
+        <source :media="`(max-width: ${breakPointSp})`" :srcset="`${getSpImg}`" />
         <img
             decoding="async"
             :src="`${getPcImg}`"
@@ -48,7 +48,7 @@ export default Vue.extend({
         },
     },
     computed: {
-        breakPointMobile: () => 768,
+        breakPointSp: () => 768,
         getPcImg(): any {
             return require(`~/assets/img/pc/${this.pcImg}`);
         },
