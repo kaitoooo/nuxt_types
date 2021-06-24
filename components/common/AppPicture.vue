@@ -1,6 +1,6 @@
 <template>
     <picture>
-        <source :media="`(max-width: ${breakPointSp})`" :srcset="`${getSpImg}`" />
+        <source :media="`(max-width: ${breakPointSp}px)`" :srcset="`${getSpImg}`" />
         <img
             decoding="async"
             :src="`${getPcImg}`"
